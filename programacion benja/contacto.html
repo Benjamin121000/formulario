@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+
+    <script src="https://kit.fontawesome.com/6cf1997e79.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" href="img/google_contacts_logo.ico">
+
+    <link rel="stylesheet" href="css/estilos2.css">
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/script.js"></script>
+    
+</head>
+<body>
+
+<section class="form_wrap">
+
+    <section class="contact_info">
+        <section class="info_title">
+            <span><i class="fas fa-user-circle"></i></span>
+            <h2>INFORMACIÓN<br>DE CONTACTO</h2> 
+        </section>
+        <section class="info_items">
+            <p><span><i class="fas fa-envelope"></i></span> contacto@somoshopefilms.com</p> 
+            <p><span><i class="fas fa-mobile-alt"></i></span> +51(977139793)</p>  
+        </section>
+    </section>
+
+    <form action="enviar.php" method="post" class="form_contact">
+        <h2>Envia un mensaje</h2>
+        <div class="user_info">
+            <label for="names">Nombres *</label>
+            <input type="text" id="names" name="nombre" required>
+
+            <label for="phone">Telefono / Celular</label>
+            <input type="text" id="phone" name="telefono">
+
+            <label for="email">Correo electronico *</label>
+            <input type="text" id="email" name="Correo" required>
+
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <input type="submit" value="Enviar Mensaje" id="btnSend">
+        </div>
+    </form>
+
+</section>
+
+</body>
+</html>
